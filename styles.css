@@ -1,10 +1,13 @@
 :root {
     --color-button: #B8FF33;
     --color-form: white;
+    --color-a: black;
   }
 
 body{
-    background-image: url("https://img3.wallspic.com/crops/6/4/0/3/2/123046/123046-triangulo-monocromo-fila-diseno-simetria-2880x1800.jpg");
+    
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/07/16/37/wood-591631_1280.jpg");
+    background-size: cover;
 }
 .container{
     background-color: var(--color-form);
@@ -28,8 +31,11 @@ body{
     font-size: 3rem;
     padding-bottom: 0.6rem;
 }
-form > div{
-    margin-bottom: 0.8rem;
+#a-github, #a-google{
+    border: 1px solid var(--color-a);
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 .b-radius-input{
     border-radius: 0.8rem;
@@ -58,6 +64,6 @@ span{
     margin-top: 2rem;
 }
 a{
-    color: black;
+    color: var(--color-a);
     font-weight: bold;
 }
