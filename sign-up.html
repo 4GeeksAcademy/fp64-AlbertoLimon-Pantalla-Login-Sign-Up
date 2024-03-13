@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i id="icono-header" class="fa-solid fa-user"></i>
+            <h1>Join us today</h1>
+            <p>Sign up today and unlock a world of posibilities. Your adventure begins here</p>
+        </div>
+
+        <form action="">
+            <div class="mb-2">
+                <label for="Username" class="form-label">Username</label>
+                <input type="email" class="form-control b-radius-input" id="Username" placeholder="Username" required>
+            </div>
+
+            <div class="mb-2">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control b-radius-input" id="Email" placeholder="Email" required>
+            </div>
+
+            <div class="mb-2">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" class="form-control b-radius-input" id="Password" placeholder="Password" required>
+            </div>
+            
+            <div class="mb-2">
+                <label for="Confirm-Password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control b-radius-input" id="Confirm-Password" placeholder="Confirm Password" required>
+            </div>
+
+            <div class="my-3">
+                <button type="submit" class="boton-submit">Sign up</button>
+            </div>
+        </form>
+
+
+        <div class="d-flex justify-content-center">
+            <span class="mb-3">-or-</span>
+        </div>
+
+        <div class="container-google-ios">
+            <div class="row">
+              <div class="col">
+                <button id="boton-google" type="button" class="btn w-100 border border-secondary">
+                    <i class="fa-brands fa-google"></i>
+                </button>
+              </div>
+              <div class="col">
+                <button id="boton-ios" type="submit" class="btn w-100 border border-secondary">
+                    <i class="fa-brands fa-github"></i>
+                </button>
+              </div>
+            </div>
+        </div>
+
+        <div class="log-in">
+            <span>Already have an account? <a class="" href="index.html">Log in</a></span>
+        </div>
+        
+    </div>
+        
+
+    <!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

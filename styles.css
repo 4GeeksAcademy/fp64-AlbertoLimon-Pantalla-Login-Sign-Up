@@ -58,11 +58,12 @@ span{
     border-radius: 0.7rem;
     font-size: 1.2rem;
 }
-.log-in{
+.log-in, .sign-up{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
+
 a{
     color: var(--color-a);
     font-weight: bold;
