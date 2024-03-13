@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form example</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles-pay-form.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <form>
+            <div class="border border-secondary bg-light">
+                <h3 class=" p-3">Payment form example</h3>
+            </div>
+
+            <div class="alert alert-danger mt-4" role="alert">
+                Some fields are missing
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-5">
+                    <label for="InputCard" class="form-label">Card #</label>
+                    <input type="text" class="form-control" id="InputCard" placeholder="XXXXXXXXXXXX" aria-describedby="Card" required>
+                </div>
+                <div class="col-3">
+                    <label for="InputCVC" class="form-label">CVC #</label>
+                    <input type="number" class="form-control" id="InputCVC" placeholder="0000" aria-describedby="CVC" required>
+                </div>
+                <div class="col-4">
+                    <label for="InputAmount" class="form-label">Amount</label>
+                    
+                    <div class="d-flex flex-row">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <input type="number" class="form-control" id="InputAmount" placeholder="Amount" aria-describedby="Amount" required>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="row g-4 mt-1">
+                <div class="col-6">
+                    <label for="InputFirstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="InputFirstName" placeholder="" aria-describedby="First Name" required>
+                </div>
+                <div class="col-6">
+                    <label for="InputLastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="InputLastName" placeholder="" aria-describedby="Last Name" required>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-1">
+                <div class="col-6">
+                    <label for="InputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="InputCity" placeholder="" aria-describedby="City" required>
+                </div>
+                <div class="col-3">
+                    <label for="InputState" class="form-label">State</label>
+                    <select class="form-select" aria-label="">
+                        <option selected>Pick a state</option>
+                        <option value="1">Spain</option>
+                        <option value="2">France</option>
+                        <option value="3">England</option>
+                        <option value="3">USA</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="InputPostalCode" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="InputPostalCode" placeholder="" aria-describedby="Postal Code" required>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-1 d-flex flex-row mb-4">
+                <div class="col-6">
+                    <label for="InputPayMethod" class="form-label">We accept:</label>
+                    <div class="d-flex flex-row col-5 bg-secondary p-2 rounded-2 gap-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="optionPP" value="optionPP" checked>
+                            <label class="form-check-label" for="optionPP">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="optionCreditCard" value="optionCreditCard">
+                            <label class="form-check-label" for="optionCreditCard">
+                                <i class="fa-brands fa-cc-apple-pay"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="optionVisa" value="optionVisa">
+                            <label class="form-check-label" for="optionVisa">
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="optionEfectivo" value="optionVisa">
+                            <label class="form-check-label" for="optionEfectivo">
+                                <i class="fa-solid fa-money-bill"></i>
+                            </label>
+                          </div>
+                    </div>
+                  
+                </div>
+                <div class="col-6 justify-content-end">
+                    <label for="InputTextArea" class="form-label">Message</label>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <div id="messageHelp" class="form-text">Add any notes here.</div>
+                </div>
+            </div>
+
+            <div class="border border-secondary bg-light p-3 d-flex justify-content-end gap-2">
+                <a href="../index.html" class="btn btn-secondary" role="button">Cancel</a>
+                <button type="submit" class="btn btn-primary" value="Submit">Send</button>
+            </div>
+            
+            
+          </form>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
